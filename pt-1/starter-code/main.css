@@ -1,3 +1,85 @@
 * {
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Raleway", sans-serif;
+  margin: 0;
+}
+
+header {
+  text-align: center;
+}
+
+h1 {
+  color: white;
+  background-image: url("images/blog_header_bg.jpg");
+  background-position: center;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+h2,
+h3 {
+  color: #44535e;
+  font-weight: bold;
+}
+
+p {
+  line-height: 1.4;
+}
+nav {
+  padding: 10px 0 0 0;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+main {
+  width: 80%;
+  margin: 0 auto;
+}
+
+article {
+  margin: 20px 0;
+  padding: 25px 0;
+}
+
+img {
+  margin: 20px 0;
+}
+article > img {
+  width: 100%;
+}
+#about img {
+  width: 500px;
+}
+
+#issues ul {
+  color: #7b97a9;
+}
+
+footer {
+  text-align: center;
+  background-color: #ccf3f6;
+  padding: 10px;
+}
+
+hr {
+  height: 1px;
+  background-color: #44535e;
+  border: none;
+}
+
+footer img {
+  margin: 30px 10px;
+}
+
+footer p {
+  padding: 20px 0 25px 0;
+
+  color: #7b97a9;
+}
