@@ -7,16 +7,18 @@ body {
   margin: 0;
 }
 
-header {
-  text-align: center;
-}
-
 h1 {
   color: white;
   background-image: url("images/blog_header_bg.jpg");
   background-position: center;
   background-size: cover;
-  padding: 100px 0;
+  padding: 180px 0 120px 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: -2;
+  font-weight: bold;
+  margin: 0;
 }
 
 h2,
@@ -27,25 +29,80 @@ h3 {
 
 p {
   line-height: 1.4;
+  font-family: "Lato", sans-serif;
 }
-nav {
-  padding: 10px 0 0 0;
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+header {
+  text-align: center;
+  width: 32px;
+  height: auto;
+}
+
+#hamburger {
+  position: relative;
+  top: -60px;
+  visibility: hidden;
+  transition: all 0.5s ease-out;
+  z-index: -1;
+  margin-left: 10px;
+}
+
+header > nav {
+  height: 50px;
+  background: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-shadow: 0 1px 5px #333;
+  transition: all 0.3s ease-in;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
+  background: white;
+}
+
+li {
+  height: 100%;
 }
 
 main {
-  width: 80%;
-  margin: 0 auto;
+  display: flex;
+  width: 100%;
+  margin: 350px auto 0 auto;
+  background: white;
+  padding: 0 5%;
+}
+
+.blog {
+  width: 66.66%;
+}
+
+aside {
+  width: 33.33%;
+  padding: 90px 0 0 25px;
 }
 
 article {
   margin: 20px 0;
-  padding: 25px 0;
+  padding: 2% 0;
+}
+
+main p {
+  text-align: justify;
 }
 
 img {
@@ -55,7 +112,7 @@ article > img {
   width: 100%;
 }
 #about img {
-  width: 500px;
+  width: 100%;
 }
 
 #issues ul {
@@ -75,11 +132,72 @@ hr {
 }
 
 footer img {
-  margin: 30px 10px;
+  padding: 30px 10px 10px 10px;
+}
+
+form {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  font-family: "Lato", sans-serif;
+  font-size: 16px;
+}
+
+input {
+  height: 30px;
+  width: 16.66%;
+  min-width: 106px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-style: none;
+  border: 2px solid #44535e;
+  margin: 0 10px 30px 0;
+  padding: 0 15px;
+}
+
+textarea {
+  height: 170px;
+  width: 100%;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-style: none;
+  border-radius: 16px;
+  padding: 15px 15px;
+  margin: 0 0 0 10px;
+  min-width: 250px;
+  resize: none;
 }
 
 footer p {
-  padding: 20px 0 25px 0;
-
+  padding: 5px 0 5px 0;
   color: #7b97a9;
+  margin: 0;
+}
+
+@media only screen and (max-width: 925px) {
+  main {
+    flex-direction: column;
+  }
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+  .blog {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header > nav {
+    top: -60px;
+    visibility: hidden;
+  }
+
+  #hamburger {
+    position: fixed;
+    top: 0px;
+    visibility: visible;
+  }
 }
