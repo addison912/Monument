@@ -1,8 +1,16 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Monument Landing Page, Part 1
+# Monument
 
-[Go to part 1!](pt-1/)  
+This website was made as an excercise for the Web Developement Immersive at (General Assembly)[https://generalassemb.ly/].
 
-[Go to part 2!](pt-2/)  
+## Built With
 
-[Go to part 3!](pt-3/)  
+- [PreFixFree](https://leaverou.github.io/prefixfree/) - The web framework used
 
+## Authors
+
+- **Addison Moore** - [github.com/addison912](https://github.com/addison912)
+
+## Acknowledgments
+
+- Icon made by (Pixel Perfecy)[https://www.flaticon.com/authors/pixel-perfect] from www.flaticon.com
+- All images provided by General assembly
