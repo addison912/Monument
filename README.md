@@ -1,6 +1,6 @@
 # Monument
 
-This website was made as an excercise for the Web Developement Immersive at (General Assembly)[https://generalassemb.ly/].
+This website was made as an excercise for the Web Developement Immersive at [General Assembly](https://generalassemb.ly/).
 
 ## Built With
 
@@ -12,5 +12,5 @@ This website was made as an excercise for the Web Developement Immersive at (Gen
 
 ## Acknowledgments
 
-- Icon made by (Pixel Perfecy)[https://www.flaticon.com/authors/pixel-perfect] from www.flaticon.com
+- Icon made by [Pixel Perfecy](https://www.flaticon.com/authors/pixel-perfect) from www.flaticon.com
 - All images provided by General assembly
